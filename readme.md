@@ -1,0 +1,1 @@
+Mudei de ideia. Farei uma extensão para navegador e um app para o celular que sincronizam os últimos eps de anime que assisti

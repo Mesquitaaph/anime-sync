@@ -15,8 +15,19 @@ const categories = {
 
 function printEps(DATA:any) {
   DATA.map((ep:any) => {
-    const nome = ep.title.rendered;
-    console.log(nome.replace("&#8211;", "-"));
+    let nome:string = ep.title.rendered;
+    while(nome.includes("&#8211;")) {
+      nome = nome.replace("&#8211;", "-");
+    }
+
+    //console.log(nome.split("-"));
+    const eps = nome.split("-");
+    if(eps.length > 2)
+      console.log(eps[0]+eps[1].substring(0,14));
+    else if(eps.length > 1)
+      console.log(eps[0]+eps[1].substring(0,14));
+    else
+      console.log(eps[0])
   })
 }
 

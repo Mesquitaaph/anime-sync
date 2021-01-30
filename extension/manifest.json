@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "version": "0.0.1",
+  "name": "AnimeSync",
+  "description": "Extensão para sincronizar episódios de animes vistos",
+  "permissions": ["activeTab", "declarativeContent", "storage", "webNavigation"],
+  "author": "Raphael Felipe de Cantuaria Mesquita",
+  "browser_action": {
+    "default_popup": "index.html",
+    "default_icon": "128.png"
+  },
+  "background": {
+    "scripts": [ "background.js" ],
+    "persistent": false
+  }
+}
